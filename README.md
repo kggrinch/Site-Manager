@@ -34,7 +34,7 @@ Set-up Instructions:
        c) Enter the same server password in step 5
    
        d) Test connection -> apply -> OK
-18. Run the CreateSiteDB class to create the database (This class should be run once manually)
+18. Run the CreateSiteDB class to create the database (This class should be manually run once)
 19. Run the SitesGUI class to start the program.
 
 
