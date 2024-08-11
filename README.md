@@ -15,11 +15,14 @@ Set-up Instructions:
 11. If using the IntelliJ community version download the Database plugin. IntelliJ -> Settings -> Plugins -> Marketplace -> Search and install Database Navigator.
 12. In IntelliJ open Database Navigator -> Click + -> MySQL ->
        a) Give it any name and a description if you want. (Could leave description blank)
+   
        b) Enter the same server username in step 5
+   
        c) Enter the same server password in step 5
+   
        d) Test connection -> apply - OK
-14. Run the CreateSiteDB class to create the database (This class should be run once manually)
-15. Run the SitesGUI class to start the program.
+13. Run the CreateSiteDB class to create the database (This class should be run once manually)
+14. Run the SitesGUI class to start the program.
 
 User Instructions    
 1. Click on the names of the sites to see information, such as:
