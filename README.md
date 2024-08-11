@@ -7,15 +7,21 @@ Set-up Instructions:
 3. Download and store the provided mysql-connector-java-8.0.24.jar into a folder.
 4. Install the MySQL Server from the MySQL official website. Link provided if needed https://dev.mysql.com/downloads/mysql/
 5. Set up a MySQL database server using MySQL Workbench or a preferred management tool. (Note: Remember the username and password for the server)
-6. Open Project in IntelliJ
+6. Open Project in IntelliJ:
 
    IntelliJ Open Project -> Choose the extracted Site-Manager-main folder
-10. Place mysql-connector-java-8.0.24.jar in the projects library. While in IntelliJ click File -> Project Structure -> Libraries -> + -> Java -> Find and click the saved
-   mysql-connector-java-8.0.24.jar file -> apply -> OK
-11. Update the MySQLConnection class with your server username and password. Site-Manager-main -> src -> Sites -> MySQLConnection -> Fill in USER and PASS constant strings with your 
-    correct server username and password that you should have remembered in step 5.
-12. If using the IntelliJ community version download the Database plugin. IntelliJ -> Settings -> Plugins -> Marketplace -> Search and install Database Navigator.
-13. In IntelliJ open Database Navigator -> Click + -> MySQL ->
+7. Place mysql-connector-java-8.0.24.jar in the projects library.
+  
+   While in IntelliJ click File -> Project Structure -> Libraries -> + -> Java -> Find and click the saved mysql-connector-java-8.0.24.jar file -> apply -> OK
+   
+11. Update the MySQLConnection class with your server username and password.
+
+    Site-Manager-main -> src -> Sites -> MySQLConnection -> Fill in USER and PASS constant strings with your correct server username and password that you should have remembered in step 5.
+
+14. If using the IntelliJ community version download the Database plugin.
+
+    IntelliJ -> Settings -> Plugins -> Marketplace -> Search and install Database Navigator.
+16. In IntelliJ open Database Navigator -> Click + -> MySQL ->
     
        a) Give it any name and a description if you want. (Could leave description blank)
    
@@ -24,8 +30,8 @@ Set-up Instructions:
        c) Enter the same server password in step 5
    
        d) Test connection -> apply - OK
-14. Run the CreateSiteDB class to create the database (This class should be run once manually)
-15. Run the SitesGUI class to start the program.
+17. Run the CreateSiteDB class to create the database (This class should be run once manually)
+18. Run the SitesGUI class to start the program.
 
 User Instructions    
 1. Click on the names of the sites to see information, such as:
