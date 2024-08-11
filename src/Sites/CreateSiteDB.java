@@ -32,7 +32,31 @@ public class CreateSiteDB implements MySQLConnection {
      * @author      <i>Kirill Grichanichenko</i>
     *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     public static void main(String[] args) {
+        createDatabase();
         createTable(SITE_FILE);
+    }
+    
+    public static void createDatabase()
+    {
+        try {
+            // Obtain connection to the MySQL server
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/", USER, PASS);
+            Statement stmt = con.createStatement();
+
+            // Check if the database already exists
+            ResultSet result = stmt.executeQuery("SHOW DATABASES LIKE 'sitesDB'");
+            if (!result.next()) {
+                // Create the database if it does not exist
+                stmt.executeUpdate("CREATE DATABASE sitesDB");
+                System.out.println("Database 'sitesDB' created successfully.");
+            } else {
+                System.out.println("Database 'sitesDB' already exists.");
+            }
+            stmt.close();
+            con.close();
+        } catch (SQLException exp) {
+            JOptionPane.showMessageDialog(null, "SQL error", "SQL ERROR!", JOptionPane.ERROR_MESSAGE);
+        }
     }
     
     /**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
