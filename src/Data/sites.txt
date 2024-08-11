@@ -1,0 +1,6 @@
+1,Annapurna,Nepal,30.03,Kathmandu,56827.0
+2,Great Barrier Reef,Australia,25.69,Canberra,76920.0
+3,Statue of Liberty,USA,331.9,Washington D.C.,914759.0
+4,Victoria Falls,Africa,1.216,Cape Town,3375.0
+5,Christ the Redeemer,Brazil,208.6,Brasília,5767.0
+6,State Hermitage Museum,Russia,143.4,Moscow,184.0

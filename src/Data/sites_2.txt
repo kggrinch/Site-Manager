@@ -1,0 +1,10 @@
+1,Annapurna,Nepal,30.03,Kathmandu,56827.0
+2,Great Barrier Reef,Australia,25.69,Canberra,76920.0
+3,Statue of Liberty,USA,331.9,Washington D.C.,914759.0
+4,Victoria Falls,Africa,1.216,Cape Town,3375.0
+5,Colosseum,Italy,59.11,Rome,116631.0
+6,Eiffel Tower,France,67.75,Paris,213011.0
+7,Stonehenge,England,55.98,London,50301.0
+8,Plitvice Lakes,Croatia,3.899,Zagreb,21851.0
+9,Angkor Wat,Cambodia,16.59,Phnom Penh,69898.0
+10,Great Pyramid of Giza,Egypt,109.3,Cairo,386900.0
