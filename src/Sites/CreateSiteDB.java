@@ -35,7 +35,13 @@ public class CreateSiteDB implements MySQLConnection {
         createDatabase();
         createTable(SITE_FILE);
     }
-    
+
+    /**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     * Method       createDatabase()
+     * Description  method that creates the sitesDB database in the server
+     * @author      <i>Kirill Grichanichenko</i>
+     * Date         10/26/2023
+    *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     public static void createDatabase()
     {
         try {
