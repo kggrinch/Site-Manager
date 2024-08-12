@@ -39,8 +39,12 @@ public class CreateSiteDB implements MySQLConnection {
     public static void createDatabase()
     {
         try {
+            String url = DB_URL;
+            String user = USER;
+            String password = PASS;
+
             // Obtain connection to the MySQL server
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/", USER, PASS);
+            Connection con = DriverManager.getConnection(url, user, password); 
             Statement stmt = con.createStatement();
 
             // Check if the database already exists
